@@ -219,3 +219,7 @@ client.background       #AA9A84
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec "dmenu_run -nf '#AEA79F' -nb '#3A3835' -sb '#A7370E' -sf '#E8DED4' -fn 'monospace-10' -p 'dmenu prompt &gt;'"
+
+# screenshot
+bindsym Print exec scrot $HOME/Pictures/Screenshoots/`date +%Y-%m-%d_%H-%M-%S`.png
+bindsym Shift+Print exec scrot -u $HOME/Pictures/Screenshoots/`date +%Y-%m-%d_%H-%M-%S`.png
